@@ -3,11 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles/normalize.css">
-    <title>Document</title>
+    <meta name="description" content="Isaias Zuñiga's WDD 231 course home page.">
+    <title>Isaias Zuñiga | WDD 231</title>
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
 </head>
 <body>
-    <h1>WDD 231: Web Frontend Development I</h1>
-    <p>Welcome to the course on Web Frontend Development I. This is the home page (for now)</p>
+    <header>
+        <img class="site-logo" src="images/logo.svg" alt="" width="40" height="40">
+        <a class="site-name" href="#home">Isaias Zuñiga</a>
+        <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-bar"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation" aria-label="Main navigation">
+        <ul>
+            <li class="current"><a href="#home" aria-current="page">Home</a></li>
+            <li><a href="#course">Course</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main id="home">
+        <h1>WDD 231: Web Frontend Development I</h1>
+        <section id="course">
+            <h2>Welcome</h2>
+            <p>Welcome to my course home page. I am learning to build responsive websites with HTML, CSS, and JavaScript.</p>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="social-links">
+            <a href="https://github.com/IsaiasZc" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.svg" alt="GitHub profile" width="48" height="48">
+            </a>
+            <a href="https://www.linkedin.com/in/isaiaszunigac/" target="_blank" rel="noopener noreferrer">
+                <img src="images/linkedin.svg" alt="LinkedIn profile" width="48" height="48">
+            </a>
+        </div>
+        <p>Isaias Zuñiga · WDD 231</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+        <p>© <span id="copyright-year"></span> Isaias Zuñiga</p>
+    </footer>
 </body>
 </html>
