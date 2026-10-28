@@ -1,0 +1,22 @@
+@media (min-width: 38rem) {
+    header {
+        grid-template-columns: 40px 1fr;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+
+    .hamburger {
+        display: none;
+    }
+
+    .navigation {
+        display: block;
+    }
+
+    .navigation ul {
+        display: flex;
+        justify-content: center;
+        max-width: 60rem;
+        margin: 0 auto;
+    }
+}

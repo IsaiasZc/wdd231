@@ -1,0 +1,113 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, sans-serif;
+    color: #172554;
+    background: #f8fafc;
+}
+
+body {
+    margin: 0;
+}
+
+/**************** HEADER ****************/
+
+header {
+    display: grid;
+    grid-template-columns: 40px 1fr 44px;
+    align-items: center;
+    gap: 0.75rem;
+    padding: 0.75rem 1rem;
+    color: #fff;
+    background: #172554;
+}
+
+.site-logo {
+    width: 40px;
+    height: 40px;
+}
+
+.site-name {
+    color: inherit;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+/**************** NAVIGATION ****************/
+
+.hamburger {
+    width: 44px;
+    height: 44px;
+    border: 0;
+    color: inherit;
+    background: transparent;
+    cursor: pointer;
+}
+
+.hamburger::before {
+    content: "\2630";
+    font-size: 1.75rem;
+}
+
+.hamburger.show::before {
+    content: "\00D7";
+}
+
+.navigation {
+    display: none;
+    background: #dbeafe;
+}
+
+.navigation.show {
+    display: block;
+}
+
+.navigation ul {
+    margin: 0;
+    padding: 0.5rem 1rem;
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    min-height: 44px;
+    padding: 0.75rem 1rem;
+    color: #172554;
+    text-decoration: none;
+}
+
+.navigation a:hover,
+.navigation .current a {
+    color: #fff;
+    background: #1d4ed8;
+}
+
+main {
+    min-height: 50vh;
+    max-width: 60rem;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+footer {
+    padding: 1.5rem 1rem;
+    color: #fff;
+    background: #172554;
+    text-align: center;
+}
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    column-gap: 1rem;
+}
+
+.social-links img {
+    display: block;
+    width: 48px;
+    height: 48px;
+}
+
+footer p {
+    margin: 0.5rem 0;
+}
