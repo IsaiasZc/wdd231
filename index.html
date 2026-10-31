@@ -3,48 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Isaias Zuñiga's WDD 231 course home page.">
-    <title>Isaias Zuñiga | WDD 231</title>
+    <meta name="description" content="Isaias Zuñiga's WDD 231 course home page: about me, student photo and Web and Computer Programming certificate courses.">
+    <meta name="author" content="Isaias Zuñiga">
+    <title>Home | Isaias Zuñiga | WDD 231</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/normalize.css">
-    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/course.js" defer></script>
 </head>
 <body>
     <header>
         <img class="site-logo" src="images/logo.svg" alt="" width="40" height="40">
-        <a class="site-name" href="#home">Isaias Zuñiga</a>
+        <span class="site-name">Isaias Zuñiga</span>
         <button id="nav-button" class="hamburger" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="nav-bar"></button>
     </header>
 
     <nav id="nav-bar" class="navigation" aria-label="Main navigation">
         <ul>
-            <li class="current"><a href="#home" aria-current="page">Home</a></li>
-            <li><a href="#course">Course</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="index.html" class="current" aria-current="page">Home</a></li>
+            <li><a href="chamber/index.html">Chamber Project</a></li>
+            <li><a href="final/index.html">Final Project</a></li>
         </ul>
     </nav>
 
-    <main id="home">
-        <h1>WDD 231: Web Frontend Development I</h1>
-        <section id="course">
-            <h2>Welcome</h2>
-            <p>Welcome to my course home page. I am learning to build responsive websites with HTML, CSS, and JavaScript.</p>
+    <main>
+        <h1>Home</h1>
+
+        <section class="about">
+            <h2>About Me</h2>
+            <p>I am Isaias Zuñiga, a BYU-Pathway student working toward the Software Development degree.</p>
+        </section>
+
+        <section class="photo">
+            <h2>Student Photo</h2>
+            <img src="images/student.webp" alt="Isaias Zuñiga" width="300" height="300">
+        </section>
+
+        <section class="certificate">
+            <h2>Web Certificate Courses</h2>
+            <div class="filters" role="group" aria-label="Filter courses">
+                <button type="button" class="filter-btn active" data-filter="all" aria-pressed="true">All</button>
+                <button type="button" class="filter-btn" data-filter="CSE" aria-pressed="false">CSE</button>
+                <button type="button" class="filter-btn" data-filter="WDD" aria-pressed="false">WDD</button>
+            </div>
+            <ul id="course-cards" class="course-cards"></ul>
+            <p class="credits">The total credits for course listed above is <span id="total-credits">0</span></p>
         </section>
     </main>
 
-    <footer id="contact">
+    <footer>
         <div class="social-links">
-            <a href="https://github.com/IsaiasZc" target="_blank" rel="noopener noreferrer">
-                <img src="images/github.svg" alt="GitHub profile" width="48" height="48">
-            </a>
             <a href="https://www.linkedin.com/in/isaiaszunigac/" target="_blank" rel="noopener noreferrer">
                 <img src="images/linkedin.svg" alt="LinkedIn profile" width="48" height="48">
             </a>
+            <a href="https://github.com/IsaiasZc" target="_blank" rel="noopener noreferrer">
+                <img src="images/github.svg" alt="GitHub profile" width="48" height="48">
+            </a>
+            <a href="https://x.com" target="_blank" rel="noopener noreferrer">
+                <img src="images/x.svg" alt="X" width="48" height="48">
+            </a>
         </div>
-        <p>Isaias Zuñiga · WDD 231</p>
-        <p>Last modified: <span id="last-modified"></span></p>
-        <p>© <span id="copyright-year"></span> Isaias Zuñiga</p>
+        <p>&copy; <span id="currentyear"></span> &bull; Isaias Zuñiga &bull; Peru</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
 </body>
 </html>

@@ -7,6 +7,3 @@ navButton.addEventListener('click', () => {
     navButton.setAttribute('aria-label', isOpen ? 'Close navigation' : 'Open navigation');
     navBar.classList.toggle('show', isOpen);
 });
-
-document.querySelector('#last-modified').textContent = new Date(document.lastModified).toLocaleString();
-document.querySelector('#copyright-year').textContent = new Date().getFullYear();
