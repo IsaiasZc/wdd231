@@ -1,0 +1,11 @@
+{
+  "familyName": "Garcia",
+  "moveInDate": "2026-10-01",
+  "familySize": 3,
+  "visitedByBishopric": false,
+  "familyMembers": [
+    { "name": "Daniel", "gender": "male", "birthdate": "1990-05-12" },
+    { "name": "Ana", "gender": "female", "birthdate": "1992-09-03" },
+    { "name": "Sofia", "gender": "female", "birthdate": "2018-02-15" }
+  ]
+}
