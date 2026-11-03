@@ -1,5 +1,6 @@
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 :root {
@@ -128,6 +129,7 @@ nav ul.open {
 footer {
     background-color: #e7e7e7;
     text-align: center;
+    padding: 1rem;
 }
 
 footer hr{ 
@@ -200,7 +202,7 @@ section.grid-display {
 }
 
 section.grid-display h2 {
-    display: none;
+    display: block;
 }
 
 section.grid-display img {
@@ -225,11 +227,8 @@ section.list-display:nth-child(odd) {
     background-color: var(--aqua-lower);
 }
 
-* { box-sizing: border-box; }
 img { max-width: 100%; height: auto; }
 .directory-cards a { overflow-wrap: anywhere; }
-section.grid-display h2 { display: block; }
-footer { padding: 1rem; }
 
 nav ul li a[aria-current="page"] {
     border-top-color: var(--aqua-accent);
