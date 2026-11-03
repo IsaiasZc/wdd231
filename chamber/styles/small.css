@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+}
+
+:root {
+    --background: #F8F8F8;
+    --red-accent: #D11848;
+    --aqua-accent: #1E9DA4;
+    --yellow-accent: #f4b42a;
+    --green-accent: #c5c32c;
+    --invalid: #ca4141;
+    --border-accent: #C1C1C1;
+    --aqua-lower: #D4EAEC;
+    --btn-active: #e2fdff;
+    --white: #FFFFFF;
+} 
+
+body {
+    background-color: #F8F8F8;
+}
+
+h1, h2, h3, #join-form fieldset legend {
+    font-family: 'Roboto', sans-serif;
+}
+
+p,label,legend,textarea{
+    font-family: 'Nunito', sans-serif;
+    font-size: .9rem;
+}
+/* nav { */
+header {
+    background: #fff;
+    width: auto;
+    padding-bottom: .4rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav {
+    align-items: center;
+    margin: 0;
+    padding: .5rem;
+    display: grid;
+    grid-template-areas: 
+        "a b c"
+        "d d d";
+    /* flex-wrap: wrap; */
+    /* flex-direction: row;
+    justify-content: space-between; */
+    order: 1;
+}
+
+#navLogo {
+    max-width: 10rem;
+}
+
+#navLogo a img {
+    width: 100%;
+}
+
+nav button#hambButton {
+
+    text-align: right;
+    display: block;
+    border: none;
+    background: transparent;
+    color: #111;
+    font-size: 1.5rem;
+    order: 3;
+}
+
+#hambButton span:nth-child(1){ display: block;} 
+#hambButton span:nth-child(2){ display: none;} 
+
+nav ul {
+    display: none;
+    grid-area: d;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    order: 4;
+}
+
+ul#firstNav li {
+    display: inline;
+}
+
+nav ul li a {
+    font-family: 'Roboto', sans-serif;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    padding: 0.4rem 0.6rem;
+    border-top: 0.375rem solid #FFF;
+    transition: 0.3s;
+}
+
+nav ul li:nth-child(1) a:hover {
+    /* background-color: rgba(50,50,50,.2); */
+    border-top: 0.375rem solid #D11848 ;
+}
+
+nav ul li:nth-child(2) a:hover {
+    /* background-color: rgba(50,50,50,.2); */
+    border-top: 0.375rem solid #f4b42a ;
+}
+
+nav ul li:nth-child(3) a:hover {
+    /* background-color: rgba(50,50,50,.2); */
+    border-top: 0.375rem solid #1E9DA4 ;
+}
+
+nav ul li:nth-child(4) a:hover {
+    /* background-color: rgba(50,50,50,.2); */
+    border-top: 0.375rem solid #C5C32C ;
+}
+
+/* display the menu on click with JS  */
+
+nav ul.open {
+    display: block;
+}
+
+#hambButton.open span:nth-child(1){ display: none;} 
+#hambButton.open span:nth-child(2){ display: block;} 
+
+/* footer css */
+
+footer {
+    background-color: #e7e7e7;
+    text-align: center;
+}
+
+footer hr{ 
+    margin: .4rem;   
+    border: 1px solid #c9c9c9;
+    /* color: #3d3a3b;  */
+}
+
+footer div.foot1-2 p a{
+    color: black;
+    text-decoration: none;
+}
+/******************* Directory ************/
+
+/* .directory-cards {
+    padding: 1rem;
+    border: 1px solid #D4D3D3;
+} */
+
+h2.directory-title {
+    font-size: 1.8rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+/* Buttons */
+
+.directory-buttons {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.directory-buttons div {
+    display: inline;
+}
+
+.directory-buttons button {
+    padding: .35rem;
+    margin: .4rem;
+    border: 1px solid var(--aqua-accent);
+    border-radius: .25rem;
+
+}
+
+.directory-buttons button img{
+    vertical-align: middle;
+}
+
+/* container */ 
+
+.directory-cards {
+    margin: 1rem 1.5rem;
+}
+
+.directory-cards section {
+    margin:  .5rem 0;
+    padding: 1rem;
+    /* transition: .5s; */
+}
+
+.directory-cards p, .directory-cards h2 {
+    padding: .3rem;
+}
+
+section.grid-display {
+    border-radius: 3px;
+    border: 1px solid #D4D3D3;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    
+}
+
+section.grid-display h2 {
+    display: none;
+}
+
+section.grid-display img {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: .5rem;
+    padding: 0 1rem;
+    max-width: 80%;
+    /* max-height: ; */
+    text-align: center;
+}
+
+section.list-display h2 {
+    font-size: 1.15rem;
+}
+
+section.list-display img {
+    display: none;
+}
+
+section.list-display:nth-child(odd) {
+    background-color: var(--aqua-lower);
+}
+
+* { box-sizing: border-box; }
+img { max-width: 100%; height: auto; }
+.directory-cards a { overflow-wrap: anywhere; }
+section.grid-display h2 { display: block; }
+footer { padding: 1rem; }
+
+nav ul li a[aria-current="page"] {
+    border-top-color: var(--aqua-accent);
+    font-weight: 700;
+}
+

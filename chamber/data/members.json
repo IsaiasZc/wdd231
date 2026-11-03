@@ -1,0 +1,74 @@
+[
+  {
+    "businessName": "San Miguel Industrias",
+    "address": "Av. Materiales 2354, Cercado de Lima 15081",
+    "phone": "+51 (01) 3365100",
+    "website": "https://www.smisolutions.com/",
+    "logo": "member-1.svg",
+    "membership": 3
+  },
+  {
+    "businessName": "GLOBAL PLASTIC SAC",
+    "address": "C. los Martillos, Lima 15311",
+    "phone": "+51 (01) 5221915",
+    "website": "http://www.globalplastic.pe/",
+    "logo": "member-2.svg",
+    "membership": 3
+  },
+  {
+    "businessName": "Power Automatismo Industriales E.I.R.L.",
+    "address": "Av. Argentina, Cercado de Lima 15082",
+    "phone": "+51 990 474 582",
+    "website": "http://www.powerautomatismo.com/",
+    "logo": "member-3.svg",
+    "membership": 2
+  },
+  {
+    "businessName": "PROTMASTER S.A.",
+    "address": "Jr, Jr. Cnel. Miguel Baquero Nº 156, Cercado de Lima 15082",
+    "phone": "+51 947 521 491",
+    "website": "https://protmaster.com.pe/",
+    "logo": "member-4.svg",
+    "membership": 3
+  },
+  {
+    "businessName": "Sithemsa Del Peru S.A.C.",
+    "address": "Guillermo Dansey 1297, Cercado de Lima 1508",
+    "phone": "+51 (01) 4230646",
+    "website": "https://sithemsa.com/",
+    "logo": "member-5.svg",
+    "membership": 2
+  },
+  {
+    "businessName": "Karly's Seguridad",
+    "address": "Av. Óscar R. Benavides 248, Cercado de Lima 15082",
+    "phone": "+51 (01) 4238709",
+    "website": "https://karlyseguridad.com.pe/",
+    "logo": "member-8.svg",
+    "membership": 3
+  },
+  {
+    "businessName": "Grupo Miraya SAC",
+    "address": "Centro Commercial Plaza, Tda 1124, Piso:2, Int Pasaje A Avenida Huarochiri, 536, Cercado de Lima 15082",
+    "phone": "+51 (01) 4794027",
+    "website": "https://www.grupomiraya.com/",
+    "logo": "member-9.svg",
+    "membership": 2
+  },
+  {
+    "businessName": "Alicorp S.A.",
+    "address": "N°. 4793 Z.I. (ENTRE AV.ARGENTINA Y AV.ELMER FAUCETT), Av. Argentina, Carmen de La Legua - Reynoso 07006",
+    "phone": "+51 013150800",
+    "website": "https://www.alicorp.com.pe/pe/es/",
+    "logo": "member-11.svg",
+    "membership": 2
+  },
+  {
+    "businessName": "ANYPSA S.A.C.",
+    "address": "Au. Chillón Trapiche, Carabayllo 15318",
+    "phone": "+51 016139090",
+    "website": "https://www.anypsa.com.pe/",
+    "logo": "member-12.svg",
+    "membership": 3
+  }
+]

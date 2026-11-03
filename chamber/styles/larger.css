@@ -1,0 +1,80 @@
+@media (min-width: 640px) {
+footer {
+    padding-bottom: .4rem;
+}
+
+footer div.foot1 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: row;
+}
+
+
+div.foot1 .foot1-1 {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+
+footer div.foot2 {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+footer div.foot2 p:not(.modify){
+    border-right: .1rem solid black;
+    padding-right: 2rem;
+}
+section.list-display {
+    display: grid;
+    grid-template-columns: repeat(3,21%) 37%;
+}
+
+div.directory-grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.3rem;
+}
+
+section.grid-display {
+    margin: 0;
+}
+
+section.grid-display img {
+    max-height: 5rem;
+}
+}
+@media (min-width: 1024px) {
+main {
+    max-width: 70rem;
+    margin: 0 auto;
+}
+nav {
+    display: flex;
+    justify-content: space-around;
+}
+
+nav div#navLogo {
+    width: 10rem;
+}
+
+nav ul.firstNav{
+    display: flex;
+    align-items: center;
+    order: 2;
+
+}
+nav button#hambButton {
+    display: none;
+}
+
+nav ul li {
+    width:6rem;
+    text-align: center;
+}
+div.directory-grid-container {
+    grid-template-columns: repeat(3,1fr);
+}
+}
