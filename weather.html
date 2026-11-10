@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OpenWeatherMap API Test</title>
+    <script src="scripts/weather.js" defer></script>
+</head>
+<body>
+    <header><h1>OpenWeatherMap.org API Test</h1></header>
+    <main>
+        <label for="api-key">Your OpenWeatherMap API key:</label>
+        <input id="api-key" type="password" autocomplete="off">
+        <button id="load-weather" type="button">Show weather</button>
+        <p>The current temperature in Trier, Germany is <span id="current-temp">not available yet</span>.</p>
+        <figure hidden>
+            <img id="weather-icon" alt="">
+            <figcaption></figcaption>
+        </figure>
+        <p id="weather-status" role="status"></p>
+    </main>
+    <footer>Isaias Zuñiga | OpenWeatherMap.org | CC BY-SA 4.0</footer>
+</body>
+</html>
