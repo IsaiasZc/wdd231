@@ -235,3 +235,168 @@ nav ul li a[aria-current="page"] {
     font-weight: 700;
 }
 
+/* Chamber home page */
+#home-container {
+    display: flex;
+    flex-direction: column;
+    max-width: 70rem;
+    margin: 0 auto;
+}
+
+.home-section {
+    min-width: 0;
+    margin: .4rem;
+    padding: 1rem;
+    border: 1px solid #D4D3D3;
+    background: #FFF;
+}
+
+.home-section h2 {
+    margin-bottom: .8rem;
+    font-size: 1.3rem;
+}
+
+#hero {
+    position: relative;
+    min-height: 18rem;
+    height: clamp(18rem, 65vw, 25rem);
+    padding: 0;
+    overflow: hidden;
+}
+
+#hero picture,
+#hero picture img {
+    position: absolute;
+    inset: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+#hero picture img {
+    object-fit: cover;
+}
+
+#hero h1 {
+    position: absolute;
+    z-index: 1;
+    top: 1rem;
+    left: 1rem;
+    right: 1rem;
+    margin: 0 auto;
+    padding: .65rem 1rem;
+    background: rgba(255, 255, 255, .92);
+    border-radius: .35rem;
+    color: #111;
+    font-size: clamp(1.35rem, 4vw, 2.2rem);
+    line-height: 1.2;
+    text-align: center;
+}
+
+a#join-button {
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    bottom: 1rem;
+    transform: translateX(-50%);
+    display: inline-block;
+    padding: .7rem 1.5rem;
+    border: 2px solid var(--aqua-accent);
+    border-radius: .35rem;
+    background: var(--aqua-accent);
+    color: #111;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+a#join-button:hover,
+a#join-button:focus-visible {
+    background: #FFF;
+    color: #111;
+}
+
+#events article {
+    border-top: .375rem solid var(--yellow-accent);
+    padding: .8rem .3rem .3rem;
+}
+
+#events h3 {
+    margin-bottom: .4rem;
+}
+
+.current-weather {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.current-weather img {
+    width: 4rem;
+    height: 4rem;
+    object-fit: contain;
+}
+
+#forecast-list {
+    margin: .5rem 0;
+    padding: 0;
+    list-style: none;
+}
+
+#forecast-list li {
+    display: flex;
+    justify-content: space-between;
+    gap: .75rem;
+    padding: .4rem 0;
+    border-bottom: 1px solid var(--border-accent);
+}
+
+.spotlight-cards {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: .75rem;
+}
+
+.spots {
+    min-width: 0;
+    padding: .8rem;
+    border: 1px solid var(--border-accent);
+    border-top: .375rem solid var(--red-accent);
+    background: #FFF;
+    text-align: center;
+    overflow-wrap: anywhere;
+}
+
+.spots:nth-child(2) {
+    border-top-color: var(--yellow-accent);
+}
+
+.spots:nth-child(3) {
+    border-top-color: var(--aqua-accent);
+}
+
+.spots img {
+    display: block;
+    width: auto;
+    max-width: min(100%, 9rem);
+    height: 3rem;
+    margin: .4rem auto;
+    object-fit: contain;
+}
+
+.spotlight-website {
+    display: inline-block;
+    overflow-wrap: anywhere;
+}
+
+.spotlight-membership {
+    margin-top: .4rem;
+    font-weight: 700;
+    text-transform: capitalize;
+}
+
+#weather-status,
+#spotlight-status {
+    color: #111;
+}

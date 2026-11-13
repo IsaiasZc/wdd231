@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore the business directory of the Greatest Chamber of Commerce in Lima, Peru.">
+    <meta name="description" content="Find Lima events, local weather, and featured member businesses at the Greatest Chamber of Commerce.">
     <meta name="author" content="Isaias Zuñiga">
-    <meta property="og:title" content="Business Directory | Greatest Chamber of Commerce">
-    <meta property="og:description" content="Explore the businesses that belong to the Greatest Chamber of Commerce in Lima, Peru, with their contact details.">
+    <meta property="og:title" content="Home | Greatest Chamber of Commerce">
+    <meta property="og:description" content="Find Lima events, local weather, and featured member businesses at the Greatest Chamber of Commerce.">
     <meta property="og:image" content="https://isaiaszc.github.io/wdd231/chamber/images/logos/logo-gc.webp">
     <meta property="og:url" content="https://isaiaszc.github.io/wdd231/chamber/index.html">
     <title>Home | Greatest Chamber of Commerce</title>
@@ -18,6 +18,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/main.js" defer></script>
+    <script src="scripts/home.js" defer></script>
     
 </head>
 <body>
@@ -33,7 +34,50 @@
             </ul>
         </nav>
     </header>
-    <main><h1>Home</h1></main>
+    <main id="home-container">
+        <section class="home-section" id="hero">
+            <h1>Welcome to the Greatest Chamber of Commerce</h1>
+            <picture>
+                <source media="(min-width: 64rem)" srcset="images/hero/lima70.jpg">
+                <source media="(min-width: 40rem)" srcset="images/hero/lima40.jpg">
+                <img src="images/hero/lima-min.jpg" alt="View of Lima, Peru" width="640" height="360" fetchpriority="high">
+            </picture>
+            <a href="join.html" id="join-button">Join the Chamber</a>
+        </section>
+
+        <section class="home-section" id="events">
+            <h2>Current Events</h2>
+            <article>
+                <h3>Ribbon Cutting: The Diamond Shack</h3>
+                <p>Join us for the grand opening and meet local business owners. Contact the chamber for event details.</p>
+            </article>
+        </section>
+
+        <section class="home-section" id="weather" aria-labelledby="weather-heading">
+            <h2 id="weather-heading">Lima Weather</h2>
+            <div class="current-weather">
+                <img id="weather-icon" alt="" width="64" height="64">
+                <div>
+                    <p>Current temperature: <strong id="temperature">Loading…</strong></p>
+                    <p id="weather-description" aria-live="polite">Loading current conditions…</p>
+                </div>
+            </div>
+            <h3>Three-Day Forecast</h3>
+            <ul id="forecast-list" aria-live="polite"><li>Loading forecast…</li></ul>
+            <p id="weather-status" role="status"></p>
+            <a href="https://openweathermap.org/" target="_blank" rel="noopener noreferrer">Weather data: OpenWeather</a>
+        </section>
+
+        <section class="home-section" id="spotlight">
+            <h2>Member Spotlights</h2>
+            <div class="spotlight-cards">
+                <article class="spots" aria-label="Featured chamber member"></article>
+                <article class="spots" aria-label="Featured chamber member"></article>
+                <article class="spots" aria-label="Featured chamber member"></article>
+            </div>
+            <p id="spotlight-status" role="status"></p>
+        </section>
+    </main>
     <footer>
         <div class="foot1">
             <div class="foot1-1">

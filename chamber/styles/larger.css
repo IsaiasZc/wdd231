@@ -1,4 +1,22 @@
 @media (min-width: 640px) {
+    #home-container {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        grid-template-areas:
+            "hero hero"
+            "events weather"
+            "spotlight spotlight";
+    }
+
+    #hero { grid-area: hero; }
+    #events { grid-area: events; }
+    #weather { grid-area: weather; }
+    #spotlight { grid-area: spotlight; }
+
+    .spotlight-cards {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
 footer {
     padding-bottom: .4rem;
 }
@@ -50,6 +68,22 @@ section.grid-display img {
 main {
     max-width: 70rem;
     margin: 0 auto;
+}
+
+#home-container {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+        grid-template-areas:
+            "events hero hero weather"
+            "spotlight spotlight spotlight spotlight";
+}
+
+#hero { grid-area: hero; }
+#events { grid-area: events; }
+#weather { grid-area: weather; }
+#spotlight { grid-area: spotlight; }
+
+.spotlight-cards {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 nav {
     display: flex;
