@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore the business directory of the Greatest Chamber of Commerce in Lima, Peru.">
+    <meta name="description" content="Apply for membership in the Greatest Chamber of Commerce in Lima, Peru.">
     <meta name="author" content="Isaias Zuñiga">
-    <meta property="og:title" content="Business Directory | Greatest Chamber of Commerce">
-    <meta property="og:description" content="Explore the businesses that belong to the Greatest Chamber of Commerce in Lima, Peru, with their contact details.">
+    <meta property="og:title" content="Join | Greatest Chamber of Commerce">
+    <meta property="og:description" content="Explore membership benefits and apply to join the business community in Lima, Peru.">
     <meta property="og:image" content="https://isaiaszc.github.io/wdd231/chamber/images/logos/logo-gc.webp">
     <meta property="og:url" content="https://isaiaszc.github.io/wdd231/chamber/join.html">
     <title>Join | Greatest Chamber of Commerce</title>
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/main.js" defer></script>
-    
+    <script src="scripts/join.js" defer></script>
 </head>
 <body>
     <header>
@@ -33,7 +33,101 @@
             </ul>
         </nav>
     </header>
-    <main><h1>Join</h1></main>
+    <main class="join-main">
+        <h1>Join the Greatest Chamber</h1>
+        <p class="join-intro">Connect with Lima businesses, learn from local leaders, and help our community thrive. Choose a membership and apply below.</p>
+        <div class="join-layout">
+            <form id="join-form" method="get" action="thankyou.html">
+                <fieldset>
+                    <legend>Applicant information</legend>
+                    <label class="join-field">First name
+                        <input type="text" name="fname" title="Enter your first name." autocomplete="given-name" required>
+                    </label>
+                    <label class="join-field">Last name
+                        <input type="text" name="lname" title="Enter your last name." autocomplete="family-name" required>
+                    </label>
+                    <label class="join-field">Organizational title
+                        <input type="text" name="title" title="Enter at least seven letters, spaces, or hyphens." autocomplete="organization-title" pattern="[A-Za-z\s-]{7,}">
+                    </label>
+                    <label class="join-field">Email address
+                        <input type="email" name="email" title="Enter a valid email address." autocomplete="email" placeholder="name@example.com" required>
+                    </label>
+                    <label class="join-field">Mobile phone number
+                        <input type="tel" name="tel" title="Enter your mobile phone number." autocomplete="tel" required>
+                    </label>
+                    <label class="join-field">Business or organization name
+                        <input type="text" name="business" title="Enter your business or organization name." autocomplete="organization" required>
+                    </label>
+                    <label class="join-field">Membership level
+                        <select name="membership" title="Choose a membership level." required>
+                            <option value="" selected disabled>Select a membership</option>
+                            <option value="np">NP Membership — Free</option>
+                            <option value="bronze">Bronze Membership — S/150 per year</option>
+                            <option value="silver">Silver Membership — S/300 per year</option>
+                            <option value="gold">Gold Membership — S/600 per year</option>
+                        </select>
+                    </label>
+                    <label class="join-field">Business or organization description
+                        <textarea name="description" title="Describe your business or organization." rows="5"></textarea>
+                    </label>
+                    <input type="hidden" name="timestamp" id="timestamp">
+                </fieldset>
+                <input class="join-submit" type="submit" value="Send Membership Application">
+            </form>
+
+            <section class="membership-levels" aria-label="Membership levels">
+                <article class="membership-card membership-np">
+                    <h3>NP Membership</h3>
+                    <p>For nonprofit organizations</p>
+                    <p class="membership-price">Free</p>
+                    <a href="#np-benefits" class="membership-link" data-dialog="np-benefits">View benefits</a>
+                </article>
+                <article class="membership-card membership-bronze">
+                    <h3>Bronze Membership</h3>
+                    <p>Build your local connections</p>
+                    <p class="membership-price">S/150 <span>/ year</span></p>
+                    <a href="#bronze-benefits" class="membership-link" data-dialog="bronze-benefits">View benefits</a>
+                </article>
+                <article class="membership-card membership-silver">
+                    <h3>Silver Membership</h3>
+                    <p>Grow your reach in Lima</p>
+                    <p class="membership-price">S/300 <span>/ year</span></p>
+                    <a href="#silver-benefits" class="membership-link" data-dialog="silver-benefits">View benefits</a>
+                </article>
+                <article class="membership-card membership-gold">
+                    <h3>Gold Membership</h3>
+                    <p>Get the most from your membership</p>
+                    <p class="membership-price">S/600 <span>/ year</span></p>
+                    <a href="#gold-benefits" class="membership-link" data-dialog="gold-benefits">View benefits</a>
+                </article>
+            </section>
+        </div>
+
+        <dialog class="membership-dialog" id="np-benefits" aria-labelledby="np-title">
+            <h2 id="np-title">NP Membership Benefits</h2>
+            <p>Designed for registered nonprofit organizations supporting the Lima community.</p>
+            <ul><li>Free chamber directory listing</li><li>Invitations to community networking events</li><li>Access to nonprofit resource workshops</li></ul>
+            <button class="dialog-close" type="button">Close</button>
+        </dialog>
+        <dialog class="membership-dialog" id="bronze-benefits" aria-labelledby="bronze-title">
+            <h2 id="bronze-title">Bronze Membership Benefits</h2>
+            <p>Everything your small business needs to get connected.</p>
+            <ul><li>Business directory listing</li><li>Monthly member newsletter</li><li>Discounted admission to chamber workshops</li></ul>
+            <button class="dialog-close" type="button">Close</button>
+        </dialog>
+        <dialog class="membership-dialog" id="silver-benefits" aria-labelledby="silver-title">
+            <h2 id="silver-title">Silver Membership Benefits</h2>
+            <p>More visibility and more opportunities to learn.</p>
+            <ul><li>All Bronze benefits</li><li>Quarterly business spotlight on chamber channels</li><li>Two free training seats per year</li><li>Discounted event sponsorship</li></ul>
+            <button class="dialog-close" type="button">Close</button>
+        </dialog>
+        <dialog class="membership-dialog" id="gold-benefits" aria-labelledby="gold-title">
+            <h2 id="gold-title">Gold Membership Benefits</h2>
+            <p>Premium support for established and growing organizations.</p>
+            <ul><li>All Silver benefits</li><li>Priority homepage business spotlight</li><li>Four free training seats per year</li><li>Two complimentary chamber event admissions</li><li>Priority access to networking and sponsorship opportunities</li></ul>
+            <button class="dialog-close" type="button">Close</button>
+        </dialog>
+    </main>
     <footer>
         <div class="foot1">
             <div class="foot1-1">

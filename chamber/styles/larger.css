@@ -1,4 +1,14 @@
 @media (min-width: 640px) {
+    .join-layout {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: start;
+        gap: 0;
+    }
+
+    .membership-levels {
+        grid-template-columns: 1fr;
+    }
+
     #home-container {
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
