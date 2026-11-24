@@ -1,0 +1,53 @@
+:root {
+    --dark-gray: #3a3b3c;
+    --white: #ffffff;
+    --orange: #ff9a00;
+}
+
+body {
+    margin: 0;
+    color: var(--dark-gray);
+    background: var(--white);
+    font-family: "Goudy Bookletter 1911", serif;
+    font-size: 1.125rem;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    padding: 1.5rem;
+    color: var(--white);
+    background: var(--dark-gray);
+    text-align: center;
+}
+
+header {
+    border-bottom: 0.4rem solid var(--orange);
+}
+
+h1,
+h2 {
+    font-family: "Fira Sans", sans-serif;
+}
+
+main {
+    max-width: 52rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+section {
+    margin-bottom: 2rem;
+    border-left: 0.3rem solid var(--orange);
+    padding-left: 1rem;
+}
+
+figure {
+    margin: 1rem 0;
+}
+
+figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
