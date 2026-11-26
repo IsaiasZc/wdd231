@@ -3,10 +3,10 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Explore the business directory of the Greatest Chamber of Commerce in Lima, Peru.">
+    <meta name="description" content="Discover places to visit in and around Lima, Peru, with the Greatest Chamber of Commerce.">
     <meta name="author" content="Isaias Zuñiga">
-    <meta property="og:title" content="Business Directory | Greatest Chamber of Commerce">
-    <meta property="og:description" content="Explore the businesses that belong to the Greatest Chamber of Commerce in Lima, Peru, with their contact details.">
+    <meta property="og:title" content="Discover | Greatest Chamber of Commerce">
+    <meta property="og:description" content="Explore places of interest in and around Lima, Peru.">
     <meta property="og:image" content="https://isaiaszc.github.io/wdd231/chamber/images/logos/logo-gc.webp">
     <meta property="og:url" content="https://isaiaszc.github.io/wdd231/chamber/discover.html">
     <title>Discover | Greatest Chamber of Commerce</title>
@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="styles/small.css">
     <link rel="stylesheet" href="styles/larger.css">
     <script src="scripts/main.js" defer></script>
-    
+    <script type="module" src="scripts/discover.js"></script>
 </head>
 <body>
     <header>
@@ -33,7 +33,12 @@
             </ul>
         </nav>
     </header>
-    <main><h1>Discover</h1></main>
+    <main class="discover">
+        <h1>Discover Lima</h1>
+        <p id="visit-message" aria-live="polite"></p>
+        <p>Explore some of the places, history, and culture that make Lima special.</p>
+        <div class="discover-cards" id="discover-cards"></div>
+    </main>
     <footer>
         <div class="foot1">
             <div class="foot1-1">
