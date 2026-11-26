@@ -53,7 +53,6 @@ body {
 .discover-card figure { grid-area: photo; margin: 0; }
 .discover-card address { grid-area: address; }
 .discover-card p { grid-area: description; }
-.discover-card button { grid-area: button; }
 
 .discover-card img {
     display: block;
@@ -64,6 +63,7 @@ body {
 }
 
 .discover-card button {
+    grid-area: button;
     padding: .7rem;
     background: #075e63;
     color: var(--white);
